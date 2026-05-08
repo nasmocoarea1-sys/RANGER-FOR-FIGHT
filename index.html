@@ -1216,6 +1216,8 @@ body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans
           <option>Siliwangi</option>
           <option>Gombel</option>
           <option>Karangjati</option>
+          <option>Demak</option>
+          <option>Pati</option>
         </select>
       </div>
       <div class="form-group">
@@ -1402,6 +1404,9 @@ window.addEventListener('load', () => {
 const USER_AUTH = {
     "bangga.kaligawe": { password: "kalgawebangga", dealer: "kaligawe", name: "ranger kaligawe" },
     "izzan.kaligawe": { password: "izzanbangga", dealer: "kaligawe", name: "ranger izzan" },
+    "bangga.karangjati": { password: "karangjatibangga", dealer: "karangjati", name: "ranger karangjati" },
+    "bangga.pati": { password: "patibangga", dealer: "pati", name: "ranger pati" },
+    "bangga.demak": { password: "demakbangga", dealer: "demak", name: "ranger demak" },
     "bangga.siliwangi": { password: "siliwangibangga", dealer: "siliwangi", name: "ranger siliwangi" },
     "bangga.gombel": { password: "gombelbangga", dealer: "gombel", name: "ranger gombel" },
     "bangga.majapahit": { password: "majapahitbangga", dealer: "majapahit", name: "ranger majapahit" },
@@ -1477,7 +1482,7 @@ async function handleInjectData() {
 
     try {
         // 3. EKSEKUSI - Pastikan URL ini hasil New Deployment terbaru!
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwKl7yVkzYfQCP4RjURnqd8qykxxzXqf2OWcNZwXABnWrKEImAjWCXmjPf06lPaN_yv-w/exec"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwEppItu-3hp56MV6_SDXYrMR0ctjGMwyOfP5-n0WuJFignIV5ub8Vej7syGEZtCAyRMw/exec"; 
         
         const response = await fetch(SCRIPT_URL, { method: 'POST', body: payload });
         const resText = await response.text();
